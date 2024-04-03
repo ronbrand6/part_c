@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>קרן המבר עורכת דין | מקרקעין נדלן וצוואות</title>
+    <script src="../../JS/mainFunc.js" defer></script>
+<!--    <script src="../../JS/contact_us.js" defer></script>-->
+<!--    <script src="../static/js/contact_us_test.js" defer></script>-->
+    <script src="{{ url_for('contact_us.static', filename='js/contact_us_test.js')}}" defer></script>
+
+</head>
+
+<body>
+<link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/law_style.css')}}"/>
+<nav>
+<div class="toolbar">
+    <div class="logo"><img src="../../Pictures/LOGO.png" alt="logo"  ></div>
+
+<ul class="menu">
+
+  <li><a href="index.html">עמוד הבית</a></li>
+  <li><a href="about.html">אודות</a></li>
+  <li><a href="contact_us.html">צור קשר</a></li>
+    <li><a href="user_profile.html">החשבון שלי</a></li>
+<li class="telephone_box">
+        <a href="tel:052-8084081" class=telephone_box">
+						  התקשרו עכשיו <p>052-8084081</p>
+    </a></li>
+</ul></div></nav>
+  <h1 class="h1">טופס ליצירת קשר</h1>
+    <form action="submit-contact-form.php" method="post">
+        <label for="firstName"> שם פרטי</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">שם משפחה</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">כתובת מייל</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">טלפון</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="message">ההודעה שלך</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button  type="submit" id="formButton">שלח טופס</button>
+    </form>
+<footer class="text_info">
+       <p>הכתובת שלנו ארנו פנזיאס 7 ראשון לציון , טלפון 052-8084081 , ימי פעילות ראשון-חמישי 09:00-19:00</p>
+    </footer>
+</body>
+</html>

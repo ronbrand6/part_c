@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>קרן המבר עורכת דין | מקרקעין נדלן וצוואות</title>
+<!--    <script src="../../pages/JS/globals.js" defer></script>-->
+     <script src="{{ url_for('.static', filename='js/globals.js') }}"></script>
+<!--    <script src="../JS/create_user_test.js" defer></script>-->
+<!--    <script src="../JS/find_user_test.js" defer></script>-->
+<!--    <script src="../JS/contact_us_test.js" defer></script>-->
+<!--    <script src="../../pages/JS/create_meeting_test.js" defer></script>-->
+
+</head>
+<body>
+<!--<link rel="stylesheet" type="text/css" href="../static/law_style_g.css">-->
+<!--<link rel="stylesheet" type="text/css" href="../static/index_g.css">-->
+<link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/law_style.css')}}"/>
+<link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/index.css')}}"/>
+
+<nav>
+<div class="toolbar">
+
+    <div class="logo"><img src="{{url_for('homepage.static', filename='media/LOGO.png')}}" alt="logo"  ></div>
+
+<ul class="menu">
+
+  <li><a href="index.html">עמוד הבית</a></li>
+  <li><a href=/About>אודות</a></li>
+  <li><a href=/contact_us>צור קשר</a></li>
+   <li><a href="user_profile.html">החשבון שלי</a></li>
+    <li class="telephone_box">
+        <a href="tel:052-8084081" class=telephone_box">
+						  התקשרו עכשיו <p>052-8084081</p>
+    </a></li>
+
+
+
+</ul></div></nav>
+<div class="flex-container">
+<div class="index_text">
+    <h1 >על המשרד</h1>
+    <p>
+המשרד הוקם במטרה להעניק יעוץ וייצוג משפטי, ללקוחות פרטיים ולחברות בתחומי העיסוק של המשרד: מקרקעין ונדל"ן, עסקאות יד שנייה, רכישת דירה מקבלן, רישום בתים משותפים, שכירות, נכסים מניבים, מיסוי מקרקעין, התחדשות עירונית, סכסוכי שכנים אצל המפקחת על הבתים המשותפים, ליקויי בניה, ליטיגציה (ייצוג בבתי משפט), משפט מסחרי, הקמת ופירוק חברות, חוזים והסכמים מסחריים, צוואות, ירושות וייפוי כח מתמשך.
+
+בתוך כך, משרדנו מקפיד על השתתפות בכנסים והשתלמויות מקצועיות וכן עדכון שוטף בחקיקה ופסיקות בתי המשפט, מתוך הבנה כי בקיאות בתחומי המשפט בהם משרדנו מתמחה תביא ערך מוסף ללקוחות המשרד ותשמור אותם אצלנו.
+
+בין לקוחות המשרד ניתן למצוא חברות מסחריות מובילות, גופים ציבוריים ולקוחות פרטיים.
+
+משרדנו מלווה את הלקוח באופן צמוד בכל הפעולות המשפטיות הדרושות לו, זאת, תוך מתן פתרונות מעשיים עם ערך מוסף והיכרות עם האנשים המניעים את הפעילות, הכרת הסביבה בה הם פועלים והבנת הצרכים המורכבים של כל לקוח, החל משלב המשא ומתן, דרך התנהלות שוטפת עם הרשויות וצדדים שלישיים, ועד להשלמת הפעולה המשפטית לשביעות רצון הלקוח.
+
+המשרד חרט על דגלו להעניק לכל לקוח שירות אישי, מקצועי, יסודי, מהיר, נגיש ובגובה העיניים, בכוונה ליצירת קשרים ארוכי-טווח עם לקוחות המשרד, מתוך הבנה שלקוחות מרוצים הם הבסיס עליו בנוי המשרד. הצלחתכם היא הצלחתנו.
+</p></div>
+   <div class="flex-box" ><div class="photo"><img src="{{url_for('homepage.static', filename='media/place.png')}}" alt="keren" > </div></div>
+
+</div>
+    <div class="hello-text">
+<button onclick="location.href='meeting_create.html'"> קביעת פגישה <span class="icons">&#128197;</span></button>
+    <button onclick="location.href='about.html'"> אודות <span class="icons">&#8505;</span></button>
+<button id="myAccountBtn">החשבון שלי<span class="icons">&#128100;</span></button>
+    <button onclick="location.href='contact_us.html'" class="bu"> טופס ליצירת קשר <span class="icons">&#9742;</span></button>
+    <button onclick="location.href='user_create.html'">יצירת חשבון חדש</button>
+</div>
+
+    <footer class="text_info">
+       <p>הכתובת שלנו ארנו פנזיאס 7 ראשון לציון , טלפון 052-8084081 , ימי פעילות ראשון-חמישי 09:00-19:00</p>
+    </footer>
+    <script src="../../pages/index/static/index.js" defer></script>
+
+</body>
+</html>
